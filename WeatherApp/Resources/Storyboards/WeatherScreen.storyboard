@@ -38,6 +38,48 @@
             </objects>
             <point key="canvasLocation" x="-286.25954198473283" y="-81.690140845070431"/>
         </scene>
+        <!--Location Search View Controller-->
+        <scene sceneID="HSD-ye-Wr0">
+            <objects>
+                <viewController storyboardIdentifier="locationSearchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UsY-O1-42u" customClass="LocationSearchViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="umN-AI-6XK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Egl-V6-79F">
+                                <rect key="frame" x="16" y="67" width="361" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="W7t-sd-yWq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cfe-tT-XJ3">
+                                <rect key="frame" x="16" y="107" width="361" height="695"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tqf-sE-1hf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tqf-sE-1hf" firstAttribute="trailing" secondItem="Egl-V6-79F" secondAttribute="trailing" constant="16" id="1Qc-0j-rzr"/>
+                            <constraint firstItem="tqf-sE-1hf" firstAttribute="trailing" secondItem="cfe-tT-XJ3" secondAttribute="trailing" constant="16" id="4kj-gE-Dl9"/>
+                            <constraint firstItem="Egl-V6-79F" firstAttribute="top" secondItem="tqf-sE-1hf" secondAttribute="top" constant="8" id="7ml-5L-aKb"/>
+                            <constraint firstItem="tqf-sE-1hf" firstAttribute="bottom" secondItem="cfe-tT-XJ3" secondAttribute="bottom" constant="16" id="BUo-mg-BRm"/>
+                            <constraint firstItem="cfe-tT-XJ3" firstAttribute="leading" secondItem="tqf-sE-1hf" secondAttribute="leading" constant="16" id="exZ-Ur-lRz"/>
+                            <constraint firstItem="Egl-V6-79F" firstAttribute="leading" secondItem="tqf-sE-1hf" secondAttribute="leading" constant="16" id="k5y-vj-irH"/>
+                            <constraint firstItem="cfe-tT-XJ3" firstAttribute="top" secondItem="Egl-V6-79F" secondAttribute="bottom" constant="8" id="xYy-69-bAk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchResultTableView" destination="cfe-tT-XJ3" id="93g-Fg-9Zb"/>
+                        <outlet property="serchTextField" destination="Egl-V6-79F" id="MlV-fk-U26"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cz6-IL-v9y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="543" y="-82"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

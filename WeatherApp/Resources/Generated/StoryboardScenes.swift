@@ -15,6 +15,8 @@ internal enum StoryboardScene {
   internal enum WeatherScreen: StoryboardType {
     internal static let storyboardName = "WeatherScreen"
 
+    internal static let locationSearchViewController = SceneType<LocationSearchViewController>(storyboard: Self.self, identifier: "locationSearchViewController")
+
     internal static let mainWeatherController = SceneType<MainWeatherViewController>(storyboard: Self.self, identifier: "mainWeatherController")
   }
 }

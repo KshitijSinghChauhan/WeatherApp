@@ -7,6 +7,9 @@ target 'WeatherApp' do
 
   # Pods for WeatherApp
   pod 'SwiftGen'
+  pod 'Reusable'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   target 'WeatherAppTests' do
     inherit! :search_paths

@@ -1,16 +1,38 @@
 PODS:
+  - Reusable (4.1.2):
+    - Reusable/Storyboard (= 4.1.2)
+    - Reusable/View (= 4.1.2)
+  - Reusable/Storyboard (4.1.2)
+  - Reusable/View (4.1.2)
+  - RxCocoa (6.7.1):
+    - RxRelay (= 6.7.1)
+    - RxSwift (= 6.7.1)
+  - RxRelay (6.7.1):
+    - RxSwift (= 6.7.1)
+  - RxSwift (6.7.1)
   - SwiftGen (6.6.3)
 
 DEPENDENCIES:
+  - Reusable
+  - RxCocoa
+  - RxSwift
   - SwiftGen
 
 SPEC REPOS:
   trunk:
+    - Reusable
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SwiftGen
 
 SPEC CHECKSUMS:
+  Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
+  RxCocoa: f5609cb4637587a7faa99c5d5787e3ad582b75a4
+  RxRelay: 4151ba01152436b08271e08410135e099880eae5
+  RxSwift: b9a93a26031785159e11abd40d1a55bcb8057e52
   SwiftGen: 4993cbf71cbc4886f775e26f8d5c3a1188ec9f99
 
-PODFILE CHECKSUM: b91ffe2928157e5b9ce45ebc554bc2f5e883326c
+PODFILE CHECKSUM: d6ddd31d4d28c9adb6f170267ce072960d66d8f3
 
 COCOAPODS: 1.15.2
